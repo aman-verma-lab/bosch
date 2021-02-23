@@ -1,0 +1,34 @@
+@import "../../../assets/scss/3-variables/variables";
+
+.footerWrapper {
+    padding: 20px;
+    @media (max-width: $break-xsm) {
+        padding: 10px;
+    }
+    border-top: 1px solid $lightGrey;
+    footer {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        @media (max-width: $break-xsm) {
+            text-align: center;
+        }
+        a {
+            padding: 0px 20px;
+            @media (max-width: $break-xsm) {
+                padding: 0px 6px;
+                flex-basis: 50%;
+                width: 50%;
+            }
+            display: inline-block;
+            &:first-child {
+                color: $black;
+                font-weight: 600;
+                margin: 10px;
+                @media (max-width: $break-xsm) {
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+}

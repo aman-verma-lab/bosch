@@ -1,0 +1,67 @@
+@import '~bootstrap/scss/bootstrap';
+@import "~font-awesome/scss/font-awesome";
+@import 'assets/scss/3-variables/variables';
+
+body{
+    font-size: 14px;
+}
+
+p, li, a{
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.customBadge{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #ca007d;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    left: -8px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.firstHeading{
+    font-size: 60px;
+    margin-bottom: 30px;
+    @media (max-width: $break-sm) {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+.description{
+    font-size: 20px;
+    color: $grey;
+    line-height: 1.2;
+    @media (max-width: $break-sm) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+section{
+    padding: 40px 0px;
+    &.alt{
+        background: $smoke;
+    }
+}
+

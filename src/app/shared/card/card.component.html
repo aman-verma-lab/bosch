@@ -1,0 +1,13 @@
+<div class="cardContainer">
+
+<div class="cardWrapper" *ngFor='let data of finalData'>
+    <div class="imageWrapper">
+        <img src="{{ data.image }}" alt="imageone" />
+    </div>
+    <div class="cardLabel">
+        <p>{{ data.name }}</p>
+        <span><i class="fa fa-plus"></i></span>
+    </div>
+</div>
+
+</div>
